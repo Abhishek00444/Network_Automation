@@ -1,4 +1,4 @@
-# Netmiko Network Backup Script
+# Netmiko Network Command execution Script
 
 This project connects to multiple network devices (routers) using Netmiko over SSH, runs the commands written in input.txt, and displays the output for each device.
 
@@ -29,5 +29,6 @@ This project connects to multiple network devices (routers) using Netmiko over S
    Edit input.txt to include the commands you want to run on all devices.
 
 5. Run the script:
+
 
    python Counfigure.py
