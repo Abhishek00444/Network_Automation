@@ -1,0 +1,5 @@
+conf t
+router ospf 1
+net 0.0.0.0 0.0.0.0 area 0
+distance 60
+default-information originate
