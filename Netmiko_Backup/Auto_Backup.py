@@ -18,7 +18,7 @@ def backup(device):
     connect.disconnect()
 
 
-devices = ['192.168.122.10', '192.168.122.20', '192.168.122.30']  //IP of devices to connect
+devices = ['192.168.122.10', '192.168.122.20', '192.168.122.30']  #IP of devices to connect
 now = datetime.now()
 print(now)
 day = now.day
@@ -28,12 +28,12 @@ year = now.year
 threads = list()
 for ip in devices:
     device = {
-        'device_type': 'cisco_ios',
+        'device_type': 'cisco_ios',  #change for non cisco devices
         'host': ip,
         'port': 22,
-        'username': 'student',  //change according to your account
-        'password': 'student',  //change according to your account
-        'secret': 'student',    //change according to device enable password
+        'username': 'student',  #change according to your account
+        'password': 'student',  #change according to your account
+        'secret': 'student',    #change according to device enable password
         'verbose': True
     }
     th = threading.Thread(target=backup,args=(device,))
@@ -45,3 +45,4 @@ for th in threads:
 
 for th in threads:
     th.join()
+
