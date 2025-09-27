@@ -20,8 +20,8 @@ Example: `R1_27-09-2025.txt`
 ## Setup & Usage
 
 1. Clone this repository:
-   git clone https://github.com/yourusername/netmiko-automation.git
-   cd netmiko-automation
+   git clone https://github.com/SleepyMonke/Network_Automation.git
+   cd Network_Automation/Netmiko_Backup
 
 2. Install dependencies:
    pip install -r requirements.txt
@@ -31,4 +31,5 @@ Example: `R1_27-09-2025.txt`
    b)Set your username, password, and secret.
 
 4. Run the script:
+
    python Auto_Backup.py
