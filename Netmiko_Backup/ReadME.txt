@@ -29,7 +29,9 @@ Example: `R1_27-09-2025.txt`
 3. Edit the script:
    a)Update the devices array with the IP addresses of your routers.
    b)Set your username, password, and secret.
+   c) Set `device_type` to match your device (default is 'cisco_ios').
 
 4. Run the script:
+
 
    python Auto_Backup.py
